@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homework</title>
+    </head>
+    <body>
+        <h1>Onlayn Kiyim-Kechaklar Do'koniga Xush Kelibsiz</h1>
+        <h2>Kiyim kechaklarni qidirish</h2>
+        <br>
+        <label for="qidirish"><span>Mahsulotni qidirish:</span>
+            <input type="text" list="names" name="name" id="name">
+            <datalist id="names">
+                <option value="Futbolkalar"></option>
+                <option value="Shimlar"></option>
+                <option value="Koftalar"></option>
+                <option value="Poyabzallar"></option>
+                <option value="Aksessuarlar"></option>
+            </datalist>
+
+            <input type="submit" value="qidirish">
+        </label>
+        <h2>Toifalar bo'yicha filtr</h2>
+        <br>
+        <fieldset>
+            <legend>Toifani tanlang</legend>
+            <input type="checkbox" id="futbolkalar" name="kiyimlar">
+            <label for="futbolkalar">Futbolkalar</label><br>
+            <input type="checkbox" id="shimlar" name="kiyimlar">
+            <label for="shimlar">Shimlar</label><br>
+            <input type="checkbox" id="koftalar" name="kiyimlar">
+            <label for="koftalar">Koftalar</label><br>
+            <input type="checkbox" id="poyabzallar" name="kiyimlar">
+            <label for="poyabzallar">Poyabzallar</label><br>
+            <input type="checkbox" id="aksessuarlar" name="kiyimlar">
+            <label for="aksessuarlar">Aksessuarlar</label>
+        </fieldset>
+        <h2>Ro'yhatdan o'tish formasi</h2>
+        <br>
+        <fieldset>
+            <legend>Foydalanuvchi ma'lumotlari</legend>
+            <form>
+                <label for="ismingiz">Ismingiz:</label>
+                <input type="text" id="ismingiz"
+                    size="20" pattern="[A-Za-z]{2,}"
+                    title="Enter your name properly! eg.Kamola"
+                    required><br><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" size="20" required><br><br>
+                <label for="manzil">Manzil:</label>
+                <input type="text" id="manzil"
+                    size="20" required><br><br>
+                <label for="telefon">Telefon:</label>
+                <input type="text" id="telefon"
+                    size="20" required><br><br>
+                <button>Submit</button>
+            </form>
+        </fieldset>
+        <h2>Mavjud mahsulotlar</h2>
+        <span><b>Kiyim kechaklar ro'yhati</b></span>
+        <br>
+        <br>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>
+                        Mahsulot nomi
+                    </th>
+                    <th>
+                        Toifa
+                    </th>
+                    <th>
+                        Narxi
+                    </th>
+                    <th>
+                        Mavjudligi
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sport Futbolkasi</td>
+                    <td>Futbolkalar</td>
+                    <td>50 000 UZS</td>
+                    <td> Bor</td>
+                </tr>
+                <tr>
+                    <td>Jins Shim</td>
+                    <td>Shimllar</td>
+                    <td>120 000 UZS</td>
+                    <td> Bor</td>
+                </tr>
+                <tr>
+                    <td>Yozgi kofta</td>
+                    <td>Koftalar</td>
+                    <td>70 000 UZS</td>
+                    <td>Tugadi</td>
+                </tr>
+                <tr>
+                    <td>Sport Po'yabzal</td>
+                    <td>Poyabzallar</td>
+                    <td>150 000 UZS</td>
+                    <td>Bor</td>
+                </tr>
+                <tr>
+                    <td>Ko'zoynak</td>
+                    <td>Aksessuarlar</td>
+                    <td>30 000 UZS</td>
+                    <td>Bor</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&copy; 2024 Onlayn Kiyim-Kechaklar Do'koni. Barcha huquqlar
+            himoyalangan.</p>
+    </body>
+</html>
